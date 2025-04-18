@@ -8,7 +8,7 @@ const delay = async (delayMs: number) => {
 };
 
 const searchCountry = async (countryName: string): Promise<Country[]> => {
-  await delay(5000); // fake delay to show loading ui
+  await delay(1500); // fake delay to show loading ui
   const endpoint = "https://restcountries.com/v3.1/name";
   const res = await fetch(`${endpoint}/${countryName}`);
   const data = await res.json();
